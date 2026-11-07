@@ -35,14 +35,11 @@ pip install pytest ruff
   ```powershell
   pytest
   ```
-- Chạy chi tiết từng test:
+- Chạy chi tiết từng test trong file kiểm thử tổng hợp:
   ```powershell
-  pytest -v
+  pytest -v tests/test_all.py
   ```
-- Chạy riêng bài kiểm thử cho Câu 1:
-  ```powershell
-  pytest tests/test_bt01.py
-  ```
+
 
 ## 5. Kiểm tra chất lượng mã (Linting)
 

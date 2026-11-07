@@ -16,11 +16,11 @@ Toàn bộ đề thi gồm **5 câu (thang điểm 10)**, được thiết kế 
 
 | Bài | Tên file | Chủ đề / Kỹ năng chính | Điểm | File kiểm thử tự động |
 |:---|:---|:---|:---:|:---|
-| **Câu 1** | [`BT01.py`](BT01.py) | Vòng lặp `while`, kiểm tra khoảng $[1; 1500]$, hàm đếm chữ số lẻ, tính tổng cấp số $S(n)$ | 2.0đ | [`tests/test_bt01.py`](tests/test_bt01.py) |
-| **Câu 2** | [`BT02.py`](BT02.py) | Xử lý chuỗi ký tự (`str`), đếm chữ hoa, kiểm tra palindrome đối xứng, tính tổng chữ số | 2.0đ | [`tests/test_bt02.py`](tests/test_bt02.py) |
-| **Câu 3** | [`BT03.py`](BT03.py) | Danh sách (`list`), nhập động dừng tại 0, lọc tổng số dương chẵn, đếm tần suất xuất hiện $k$ | 2.0đ | [`tests/test_bt03.py`](tests/test_bt03.py) |
-| **Câu 4** | [`BT04.py`](BT04.py) | Từ điển (`dict`), thư viện sách, kiểm tra năm xuất bản $\le$ năm hiện tại, xóa phần tử theo key | 2.0đ | [`tests/test_bt04.py`](tests/test_bt04.py) |
-| **Câu 5** | [`BT05.py`](BT05.py) | Lập trình hướng đối tượng (`OOP`), `class DienThoai`, thuộc tính, hàm khởi tạo `__init__`, phương thức hiển thị | 2.0đ | [`tests/test_bt05.py`](tests/test_bt05.py) |
+| **Câu 1** | [`BT01.py`](BT01.py) | Vòng lặp `while`, kiểm tra khoảng $[1; 1500]$, hàm đếm chữ số lẻ, tính tổng cấp số $S(n)$ | 2.0đ | [`tests/test_all.py`](tests/test_all.py) (`TestBT01`) |
+| **Câu 2** | [`BT02.py`](BT02.py) | Xử lý chuỗi ký tự (`str`), đếm chữ hoa, kiểm tra palindrome đối xứng, tính tổng chữ số | 2.0đ | [`tests/test_all.py`](tests/test_all.py) (`TestBT02`) |
+| **Câu 3** | [`BT03.py`](BT03.py) | Danh sách (`list`), nhập động dừng tại 0, lọc tổng số dương chẵn, đếm tần suất xuất hiện $k$ | 2.0đ | [`tests/test_all.py`](tests/test_all.py) (`TestBT03`) |
+| **Câu 4** | [`BT04.py`](BT04.py) | Từ điển (`dict`), thư viện sách, kiểm tra năm xuất bản $\le$ năm hiện tại, xóa phần tử theo key | 2.0đ | [`tests/test_all.py`](tests/test_all.py) (`TestBT04`) |
+| **Câu 5** | [`BT05.py`](BT05.py) | Lập trình hướng đối tượng (`OOP`), `class DienThoai`, thuộc tính, hàm khởi tạo `__init__`, phương thức hiển thị | 2.0đ | [`tests/test_all.py`](tests/test_all.py) (`TestBT05`) |
 
 > 📄 Xem toàn văn đề thi gốc và đáp án tại: [`DE_THI.md`](DE_THI.md) hoặc file gốc [`Lập trình Python (229152)_ca7h30, 22-7.pdf`](Lập%20trình%20Python%20%28229152%29_ca7h30,%2022-7.pdf).
 
@@ -36,20 +36,18 @@ BT_2_de_thi/
 ├── README.md              # Tài liệu hướng dẫn chính
 ├── SETUP.md               # Hướng dẫn thiết lập môi trường
 ├── DE_THI.md              # Toàn văn đề thi & đáp án biểu điểm
+├── cham_diem.py           # Script chấm điểm tự động theo thang 10
 ├── BT01.py                # Mã nguồn bài 1
 ├── BT02.py                # Mã nguồn bài 2
 ├── BT03.py                # Mã nguồn bài 3
 ├── BT04.py                # Mã nguồn bài 4
 ├── BT05.py                # Mã nguồn bài 5
-└── tests/                 # Thư mục kiểm thử tự động với pytest
+└── tests/                 # Thư mục kiểm thử tự động duy nhất
     ├── __init__.py
     ├── conftest.py
-    ├── test_bt01.py
-    ├── test_bt02.py
-    ├── test_bt03.py
-    ├── test_bt04.py
-    └── test_bt05.py
+    └── test_all.py        # Toàn bộ 28 bài test cho cả 5 câu (BT01 -> BT05)
 ```
+
 
 ---
 
