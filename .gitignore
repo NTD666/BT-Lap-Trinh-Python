@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+
+# Đề 2 (thư mục riêng)
+de2/
+
+# File preview tạm
+page*_preview.png
+
